@@ -16,6 +16,7 @@ runs = db.runs
 N_ROWS = int(1e3)
 N_VARS = int(1e3)
 
+#greater than 100000 seems to hit the document size limit of about 18 MB. 
 sizes = [1000,10000,50000,100000]
 #sizes = [10,20,30]
 
