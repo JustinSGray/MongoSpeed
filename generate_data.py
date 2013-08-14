@@ -25,7 +25,7 @@ query_times = []
 
 
 #for N_ROWS in sizes:
-for N_ROWS in [100]: 
+for N_ROWS in sizes: 
     i_times = []
     q_times = []
     for N_VARS in sizes: 

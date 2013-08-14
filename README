@@ -1,0 +1,8 @@
+A simple script to test the speed of MONGODB. 
+
+To run, you must first start a MONGODB server on your local machine (with default config). 
+
+Then run script... it will take about an hour to run through all cases
+
+Script will plot results, and also write out a file called 'db_times.out' so you can play with
+data without re-running. 
