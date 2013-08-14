@@ -1,4 +1,5 @@
 import random
+import time 
 
 from pymongo import MongoClient
  
@@ -24,10 +25,14 @@ db = client.test_database
 
 runs = db.runs
 db.runs.remove()
+
+start_time = time.time()
+
 for run in rows: 
     run_id = runs.insert(run)
-    print run_id
 
-for r in runs.find(): 
-    print r
+print "time per insert: ", (time.time() - start_time)/N_ROWS
+
+
+
 
